@@ -1,0 +1,115 @@
+/* CSS declarations go here */
+body {
+    font-family:sans-serif
+}
+path {
+  stroke: black;
+    fill: none;
+}
+.map {
+    stroke: black;
+}
+
+.cell-1 {
+  stroke: #DDD;
+    fill: #DDD;
+}
+
+.cell0 {
+    stroke: #FFF;
+    fill: #FFF;
+}
+
+.cell1 {
+    stroke: #FEE;
+    fill: #FEE;
+}
+
+.cell2 {
+    stroke: #FDD;
+    fill: #FDD;
+}
+
+.cell3 {
+    stroke: #FCC;
+    fill: #FCC;
+}
+
+.cell4 {
+    stroke: #FBB;
+    fill: #FBB;
+}
+
+.cell5 {
+    stroke: #Faa;
+    fill: #Faa;
+}
+
+.cell6 {
+    stroke: #F99;
+    fill: #F99;
+}
+
+.cell7 {
+    stroke: #F88;
+    fill: #F88;
+}
+
+.cell8 {
+    stroke: #F77;
+    fill: #F77;
+}
+
+.cell9 {
+    stroke: #F66;
+    fill: #F66;
+}
+.cell10 {
+    stroke: #F55;
+    fill: #F55;
+}
+.cell11 {
+    stroke: #F44;
+    fill: #F44;
+}
+.cell12 {
+    stroke: #F33;
+    fill: #F33;
+}
+.cell13 {
+    stroke: #F22;
+    fill: #F22;
+}
+.cell14 {
+    stroke: #F11;
+    fill: #F11;
+}
+.cell15 {
+    stroke: #F00;
+    fill: #F00;
+}
+
+/* A dot for a hospital */
+.hospital {
+  stroke: steelblue;
+  fill: steelblue;
+}
+.carouselSlide {
+    border-style: solid;
+    border-color: #44A;
+    border-width : 1;
+    border-radius: 4px;
+    font-size: 10px;
+    width : 200px;
+    cursor: pointer;
+    background-color: #EEE;
+    color: black;
+    vertical-align: top;
+}
+.carouselSlide:hover {
+    background-color: #DDD;
+}
+.footer {
+    color : darkgray;
+    font-size: 9px;
+}
