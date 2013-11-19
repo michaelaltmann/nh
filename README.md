@@ -1,0 +1,1 @@
+A study in the distribution of nursing home across Minnesota, with an eye towards the particular challenges of rural areas where nursing homes are scarcer.

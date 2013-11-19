@@ -62,7 +62,6 @@ function loadMap() {
     d3.json("minnesota.geojson", function (error, mn) {
         var path = d3.geo.path()
             .projection(projection);
-        debugger;
         svg.append("path")
             .datum({
                 type: "FeatureCollection",
@@ -158,6 +157,7 @@ function redraw() {
 
 
 function cellToFeature(cell) {
+    if (cell.length < 3) return null;
     var coordinates = cell.slice(0);    
     //complete the loop of the polygon
     coordinates[coordinates.length] = coordinates[0];
@@ -175,6 +175,7 @@ function cellToFeature(cell) {
 
 function draw(cell, style, label) {
     var cellFeature = cellToFeature(cell);
+    if (cellFeature == null) return;
     var path = d3.geo.path()
         .projection(projection);
     svg.append("path")
@@ -208,9 +209,9 @@ function addMeasure(name, value) {
             max: 0
         };
         Measures.insert(m);
-    } else {
-        m = existing.fetch()[0];
     }
+    m = Measures.find(selector).fetch()[0];
+    
     if (m.min == null) m.min = 1000;
     if (m.max == null) m.max = 0;
     if (value < m.min) {
