@@ -9,9 +9,19 @@
 {{> main}}
         <div id="map" >
     <svg id="svg">
+        <defs>
+    <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+        <stop offset="0%" stop-color="green"  stop-opacity="1"/>
+        <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
         </svg>    
     </div>
-    <small> This application does not display correctly in Internet Explorer.  The region around each nursing home is defined by the places for which that is the closest nursing home. The color indicates the average distance traveled by people in that catch basin to the nuring home, with darker red representing a larger value. </small>
+    <div id="map2" >
+    <svg id="svg2">
+        </svg>    
+    </div>
+    <small> This application does not display correctly in Internet Explorer.  The region around each nursing home is defined by the places for which that is the closest nursing home. The color indicates the average distance traveled by people in that catch basin to the nursing home, with darker red representing a larger value. </small>
 
 <br>
 
