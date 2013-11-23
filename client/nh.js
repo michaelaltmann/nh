@@ -1,7 +1,7 @@
 Template.main.events({
     "click .carouselSlide": function (evt) {
         drawGrocers();
-        var measureName = $(evt.target).attr("data-name");
+        var measureName = "travel";
         measure = Measures.find({
             name: measureName
         }).fetch()[0];
@@ -18,8 +18,8 @@ Template.main.measures = function () {
 }
 
 
-var width = 600,
-    height = 500,
+var width = 400,
+    height = 400,
     maxRate = 60;
 var measure = null;
 var bBox = [[-97, 43.5], [-89, 49]];
@@ -241,9 +241,10 @@ function draw(cell, style, label) {
     if (cellFeature == null) return;
     var path = d3.geo.path()
         .projection(projection);
-    if (false) svg.append("path")
+    svg.append("path")
         .datum(cellFeature)
-        .attr("class", style)       
+//        .attr("class", style)       
+        .attr("class", "catchBasin")       
         .attr("d", path)
         .attr("clip-path", "url(#clipper)")
         .append("svg:title").text(label);

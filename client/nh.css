@@ -95,7 +95,8 @@ path {
   fill: steelblue; 
 }
 .catchBasin {
-    fill : url(#grad1);
+ stroke: #DDD;
+  fill: none; 
 }
 .grocer {
   stroke: green;
